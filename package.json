@@ -1,16 +1,16 @@
 {
   "name": "duck-bot",
   "version": "1.0.0",
-  "description": "Discord bot that gamifies chat with a garden and mini games.",
-  "main": "src/index.js",
+  "description": "Discord bot with garden + mini games (JS, discord.js v14).",
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "register": "node src/register.js"
   },
   "dependencies": {
-    "discord.js": "^14.11.0",
-    "dotenv": "^16.0.0",
-    "zod": "^3.22.0"
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
   }
 }

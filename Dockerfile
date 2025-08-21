@@ -1,16 +1,8 @@
 FROM node:20-alpine
-
-# Create app directory
 WORKDIR /app
-
-# Copy package manifest and install production dependencies
-COPY package.json package.json
-RUN npm ci --omit=dev
-
-# Copy source files
+COPY package.json ./
+RUN npm install --omit=dev
 COPY . .
-
 ENV NODE_ENV=production
-
-# Default command
-CMD ["npm", "start"]
+VOLUME ["/app/data"]
+CMD ["npm","start"]
