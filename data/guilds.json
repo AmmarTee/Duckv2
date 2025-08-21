@@ -1,0 +1,24 @@
+{
+  "740784147798163508": {
+    "guildId": "740784147798163508",
+    "gardenChannelId": "1407185428083113994",
+    "gardenMessageId": "1408155129349406732",
+    "leaderboardChannelId": "1407107738340950106",
+    "leaderboardMessageId": "1408155018342695005",
+    "rewardChannelIds": [
+      "930876773846106142"
+    ],
+    "waterCost": 10,
+    "plantMaxWater": 100,
+    "waterDecIntervalMin": 60,
+    "waterDecAmount": 1,
+    "coinsPerWin": 20,
+    "xpPerWin": 10,
+    "cooldownSeconds": 30,
+    "dailyWarningHourLocal": 20,
+    "lowWaterThreshold": 20,
+    "gamesEnabled": true,
+    "_lastDegradeAt": 1755810807951,
+    "_lastWarningDate": "2025-08-21"
+  }
+}

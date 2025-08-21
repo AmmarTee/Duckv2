@@ -3,7 +3,7 @@ import { getGuild, saveGuild, getUser, saveUser, getAllUsers } from '../storage/
 import { buildGardenEmbed } from '../features/garden.js';
 import { buildLeaderboardEmbed } from '../features/leaderboard.js';
 import { claimDaily, sendCoins } from '../features/economy.js';
-import { playGame } from '../features/games/engine.js';
+import { startGameLoop, stopGameLoop } from '../features/games/engine.js';
 import { requireAdmin } from '../util/perms.js';
 
 // Define slash command data for registration
@@ -71,6 +71,9 @@ export const data = new SlashCommandBuilder()
     .addSubcommand(sub => sub
       .setName('math')
       .setDescription('Answer a quick math problem'))
+    .addSubcommand(sub => sub
+      .setName('stop')
+      .setDescription('Stop the auto game loop in this channel'))
   )
   // leaderboard group
   .addSubcommandGroup(group => group
@@ -223,13 +226,24 @@ export async function handle(interaction) {
     }
     return;
   }
-  // PLAY commands
+   // PLAY commands
   if (group === 'play') {
+    if (sub === 'stop') {
+      const stopped = await stopGameLoop(interaction.channelId);
+      await interaction.reply({
+        content: stopped ? 'Stopped the game loop in this channel.' : 'No active game loop here.',
+        ephemeral: true
+      });
+      return;
+    }
+
     if (!cfg.gamesEnabled) {
       await interaction.reply({ content: 'Games are disabled by an administrator.', ephemeral: true });
       return;
     }
-    await playGame(sub, interaction, cfg);
+
+    // Start (or continue) a loop; first round uses the chosen mode. Next rounds are random.
+    await startGameLoop(sub, interaction, cfg);
     return;
   }
   // LEADERBOARD commands

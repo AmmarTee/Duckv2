@@ -42,7 +42,10 @@ export async function getGuild(guildId) {
       lowWaterThreshold: 20,
       gamesEnabled: true,
       _lastDegradeAt: Date.now(),
-      _lastWarningDate: new Date().toISOString().split('T')[0]
+      _lastWarningDate: new Date().toISOString().split('T')[0],
+      gamesAutoChain: true,
+      gameDelayMinSec: 10,
+      gameDelayMaxSec: 30
     };
   }
   return guilds[guildId];

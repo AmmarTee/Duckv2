@@ -1,0 +1,74 @@
+{
+  "740784147798163508:273725750367223808": {
+    "guildId": "740784147798163508",
+    "userId": "273725750367223808",
+    "coins": 62,
+    "xp": 37,
+    "plantStartTs": 1755800702912,
+    "waterLevel": 98,
+    "lastPlayAt": 1755810846860,
+    "lastDaily": "2025-08-21",
+    "dailyStreak": 1,
+    "lastLbRefresh": ""
+  },
+  "740784147798163508:1364131292655915060": {
+    "guildId": "740784147798163508",
+    "userId": "1364131292655915060",
+    "coins": 212,
+    "xp": 107,
+    "plantStartTs": 1755800797276,
+    "waterLevel": 98,
+    "lastPlayAt": 1755801743772,
+    "lastDaily": "2025-08-21",
+    "dailyStreak": 1,
+    "lastLbRefresh": ""
+  },
+  "740784147798163508:1225595772721168394": {
+    "guildId": "740784147798163508",
+    "userId": "1225595772721168394",
+    "coins": 310,
+    "xp": 155,
+    "plantStartTs": 1755801212940,
+    "waterLevel": 98,
+    "lastPlayAt": 1755801815591,
+    "lastDaily": "",
+    "dailyStreak": 0,
+    "lastLbRefresh": ""
+  },
+  "740784147798163508:833579905575944284": {
+    "guildId": "740784147798163508",
+    "userId": "833579905575944284",
+    "coins": 20,
+    "xp": 10,
+    "plantStartTs": 1755801268405,
+    "waterLevel": 98,
+    "lastPlayAt": 1755801315909,
+    "lastDaily": "",
+    "dailyStreak": 0,
+    "lastLbRefresh": ""
+  },
+  "740784147798163508:1255528662095237160": {
+    "guildId": "740784147798163508",
+    "userId": "1255528662095237160",
+    "coins": 20,
+    "xp": 10,
+    "plantStartTs": 1755803118560,
+    "waterLevel": 98,
+    "lastPlayAt": 1755805249184,
+    "lastDaily": "",
+    "dailyStreak": 0,
+    "lastLbRefresh": ""
+  },
+  "740784147798163508:874451990887927879": {
+    "guildId": "740784147798163508",
+    "userId": "874451990887927879",
+    "coins": 20,
+    "xp": 10,
+    "plantStartTs": 1755805014441,
+    "waterLevel": 99,
+    "lastPlayAt": 1755805057588,
+    "lastDaily": "",
+    "dailyStreak": 0,
+    "lastLbRefresh": ""
+  }
+}
